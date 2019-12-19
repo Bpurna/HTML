@@ -1,0 +1,74 @@
+html{
+  background-image: url('duotone.jpg');
+}
+body {font-family: Arial, Helvetica, sans-serif;}
+* {box-sizing: border-box;}
+.main-div{
+  display: flex;
+  justify-content: center;
+  margin-right: 255px;
+  padding: 50px;
+}
+.login-container{
+  position: absolute;
+  background-color: #eee;
+  top: 30px;
+  height: 463px;
+  width: 295px;
+  /* display: inline-block;  */
+  margin-left: 30px;
+}
+.image-container{
+  width: 50%; 
+  height: 20%;
+  padding: 10px;
+}
+p{
+    text-align: center;
+}
+.bttn{
+    margin-top: 40px;
+}
+ .textLogin{
+   text-align: center;
+   width:80%;
+   padding: 10px;
+  }
+  .input-container {
+    display: flex;
+    padding: 6px;
+    width: 80%;
+    margin-bottom: 15px;
+  }
+  .icon {
+    padding: 10px;
+    background: dodgerblue;
+    color: white;
+    min-width: 50px;
+    text-align: center;
+  }
+ .button {
+    background-color: dodgerblue;
+    color: white;
+    padding: 15px ;
+    border: none;
+    cursor: pointer;
+    width:70%;
+    opacity: 0.9;
+    border-radius: 10px;
+    margin: 10px;
+  }
+ .right-box{
+  position: absolute;
+  margin-left: 325px;
+  background-color: #eee;
+  top: 30px;
+  height: 463px;
+  width: 295px;
+  }
+ 
+
+
+
+  
+

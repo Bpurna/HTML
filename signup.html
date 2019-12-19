@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html>
+<meta charset="utf-8">
+
+<head>
+    <title>Welcome to Signup Form</title>
+    <link rel="styleSheet" href="signup.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+</head>
+
+<body background="duotone.jpg">
+    <div class="main-container">
+        <div class="bttn">
+            <h1 class="mainText"> SignUp </h1>
+            <div class="input-icons">
+                <i class="fa fa-user icon"></i>
+                <input type="text" name="fname" id="fname" placeholder="FirstName" class="input-field">
+                <input type='text' name="fullName" id="fullName" placeholder="MiddleName" class="input-field">
+                <input type='text' name="lastname" id="lastname" placeholder="LastName" class="input-field"><br>
+            </div>
+            <div class="input-icons">
+                <i class="fa fa-envelope icon"></i>
+                <input type="email" name="email" id="email" placeholder="Email" class="input-field1"><br>
+            </div>
+            <div class="input-icons">
+                <i class="fa fa-phone icon"></i>
+                <input type="tel" name="tel" id="tel" pattern="^(?:(?:\+|0{0,2})91(\s*[\-]\s*)?|[0]?)?[789]\d{9}$" maxlength="10"
+                    placeholder="MobileNumber" class="input-field1"><br>
+            </div>
+            <div class="input-icons">
+                <i class="fa fa-key icon"></i>
+                <input type="password" name="password" id="password" placeholder="password" class="input">
+                <i class="fa fa-key icon"></i>
+                <input type="password" name="password" id="confpassword" placeholder="confirmpassword" class="input"><br>
+            </div>
+            <div class="input-icons">
+                <select class="input-field1" id="country">
+                    <option onchange='country(event)'>...SelectCountry...</option>
+                    <option value="Indila" id="country">India</option>
+                    <option value="Canada" id="country">Canada</option>
+                    <option value="China" id="country">China</option>
+                    <option value="US" id="country">US</option>
+                </select><br><br>
+                <label>AddressProof:</label>
+                <input type="checkbox">Aadger
+                <input type="checkbox">Pan
+                <input type="checkbox">Licence
+                <input type="file" name="file" id="file"><br><br>
+                <label for="gender" > Gender:</label>
+                <input type="radio" name="gender" id="gender" value="Male" onchange="gender(event)">Male
+                <input type='radio' name="gender" id="gender" value="female" onchange="gender(event)">Female
+                <input type='radio' name="gender" id="gender" value="Other" onchange="gender(event)">Other<br><br>
+                <lebel> Birthday:</lebel>
+                <input type="date" name="bday" id="bday"><br><br>
+                <label for="message">Full Address:</label><br>
+                <textarea name='message' value="message" id="message" rows="10" cols="30"></textarea><br>
+                <p>
+                    <input type="checkbox">I read and agree to <a>term and conditions</a> .
+                </p>
+                <button type="button" onclick="sign()" class="btn">Signup</button>
+            </div>
+        </div>
+        <!-- <input type="reset" name="reset" value="Reset" /> -->
+    </div>
+
+</body>
+<script src="App.js"></script>
+
+</html>

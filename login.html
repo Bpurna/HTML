@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <link rel="styleSheet" href="login.css">
+    <title>Login</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+</head>
+
+<body>
+    <div class="main-div">
+        <div class="login-container">
+            <picture class="image-container">
+                <img src="avatar (1).png" alt="Beatles">
+            </picture>
+            <label class="input-container">
+                <i class="fa fa-user icon"></i>
+                <input class="textLogin" type="email" name="email" id="email" placeholder="UserName">
+            </label>
+            <label class="input-container">
+                <i class="fa fa-key icon"></i>
+                <input class="textLogin" type="password" name="password" id="password" placeholder="Password">
+            </label>
+            <input type="checkbox">Remember me
+                <button type="button" onclick="login()" class="button">Login</button><br>
+                <p onclick="signup()">Forgot password</p>
+        </div>
+        <div class="right-box">
+            <h1 class="mainText"> SignUp </h1>
+            <div class="input-container">
+                <i class="fa fa-user icon"></i>
+                <input type="text" name="fname" id="fname" placeholder="FirstName" class="input-field">
+            </div>
+            <div class="input-container">
+                <i class="fa fa-envelope icon"></i>
+                <input type="email" name="email" id="email" placeholder="Email" class="input-field1"><br>
+            </div>
+            <div class="input-container">
+                <i class="fa fa-key icon"></i>
+                <input type="password" name="password" id="password" placeholder="password" class="input">
+            </div>
+            <div class="input-container">
+                <i class="fa fa-key icon"></i>
+                <input type="password" name="password" id="confpassword" placeholder="confirmpassword"
+                    class="input"><br>
+            </div>
+            <input type="checkbox">Sendme newsletter<br>
+            <button type="button" onclick="sign()" class="button">Signup</button>
+        </div>
+    </div>
+</body>
+
+</html>
