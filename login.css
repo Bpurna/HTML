@@ -45,7 +45,7 @@ p{
     background: dodgerblue;
     color: white;
     min-width: 50px;
-    text-align: center;
+    /* text-align: center; */
   }
  .button {
     background-color: dodgerblue;
@@ -56,7 +56,7 @@ p{
     width:70%;
     opacity: 0.9;
     border-radius: 10px;
-    margin: 10px;
+    margin: 0px;
   }
  .right-box{
   position: absolute;

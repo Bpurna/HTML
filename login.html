@@ -22,33 +22,37 @@
                 <i class="fa fa-key icon"></i>
                 <input class="textLogin" type="password" name="password" id="password" placeholder="Password">
             </label>
-            <input type="checkbox">Remember me
-                <button type="button" onclick="login()" class="button">Login</button><br>
-                <p onclick="signup()">Forgot password</p>
+            <input type="checkbox" id="checkbox" onchange='checkbox(event)'>Remember me
+            <button type="button" onclick="login()" class="button">Login</button><br>
+            <p onclick="signup()">Forgot password</p>
         </div>
         <div class="right-box">
             <h1 class="mainText"> SignUp </h1>
             <div class="input-container">
                 <i class="fa fa-user icon"></i>
-                <input type="text" name="fname" id="fname" placeholder="FirstName" class="input-field">
+                <input type="text" name="fname" id="fname" placeholder="FirstName" class="textLogin">
             </div>
             <div class="input-container">
                 <i class="fa fa-envelope icon"></i>
-                <input type="email" name="email" id="email" placeholder="Email" class="input-field1"><br>
+                <input type="email" name="email" id="eml" placeholder="Email" class="textLogin"><br>
             </div>
             <div class="input-container">
                 <i class="fa fa-key icon"></i>
-                <input type="password" name="password" id="password" placeholder="password" class="input">
+                <input type="password" name="password" id="psw" placeholder="password"
+                    pattern="(?=.*\d)(?=.*[a-z])(?=.*[A-Z]).{8,}"
+                    title="Must contain at least one number and one uppercase and lowercase letter, and at least 8 or more characters"
+                    required class="textLogin">
             </div>
             <div class="input-container">
                 <i class="fa fa-key icon"></i>
                 <input type="password" name="password" id="confpassword" placeholder="confirmpassword"
-                    class="input"><br>
+                    class="textLogin"><br>
             </div>
-            <input type="checkbox">Sendme newsletter<br>
+            <input type="checkbox" id="checkbox" onchange='checkbox(event)'>Sendme newsletter
             <button type="button" onclick="sign()" class="button">Signup</button>
         </div>
     </div>
+    <script src="App.js"></script>
 </body>
 
 </html>
