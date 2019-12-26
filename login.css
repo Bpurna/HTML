@@ -6,7 +6,7 @@ body {font-family: Arial, Helvetica, sans-serif;}
 .main-div{
   display: flex;
   justify-content: center;
-  margin-right: 255px;
+  margin-right: 629px;
   padding: 50px;
 }
 .login-container{
@@ -14,9 +14,9 @@ body {font-family: Arial, Helvetica, sans-serif;}
   background-color: #eee;
   top: 30px;
   height: 463px;
-  width: 295px;
-  /* display: inline-block;  */
-  margin-left: 30px;
+  width: 292px;
+  margin-left: 88px;
+  padding: 10px;
 }
 .image-container{
   width: 50%; 
@@ -29,25 +29,27 @@ p{
 .bttn{
     margin-top: 40px;
 }
- .textLogin{
+.textLogin{
    text-align: center;
    width:80%;
    padding: 10px;
-  }
-  .input-container {
-    display: flex;
-    padding: 6px;
-    width: 80%;
-    margin-bottom: 15px;
-  }
-  .icon {
+}
+.input-container {
+  display: flex;
+  padding: 6px;
+  width: 106%;
+  margin-bottom: 16px;
+  margin-left: 3px;
+}
+.icon {
+    color: black;
+    min-width: 50px;
+    margin-right: -12px;
     padding: 10px;
     background: dodgerblue;
-    color: white;
-    min-width: 50px;
-    /* text-align: center; */
-  }
- .button {
+    min-width: 48px;
+}
+.button {
     background-color: dodgerblue;
     color: white;
     padding: 15px ;
@@ -56,17 +58,22 @@ p{
     width:70%;
     opacity: 0.9;
     border-radius: 10px;
-    margin: 0px;
-  }
- .right-box{
+    margin: 12px;
+}
+.right-box{
   position: absolute;
-  margin-left: 325px;
+  margin-left: 376px;
   background-color: #eee;
   top: 30px;
   height: 463px;
   width: 295px;
-  }
- 
+  padding: 20px;
+  border-left: 1px solid lightgray;
+}
+#Div2 {
+  display: none;
+}
+
 
 
 

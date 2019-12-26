@@ -9,49 +9,55 @@
 </head>
 
 <body>
-    <div class="main-div">
-        <div class="login-container">
-            <picture class="image-container">
-                <img src="avatar (1).png" alt="Beatles">
-            </picture>
-            <label class="input-container">
-                <i class="fa fa-user icon"></i>
-                <input class="textLogin" type="email" name="email" id="email" placeholder="UserName">
-            </label>
-            <label class="input-container">
-                <i class="fa fa-key icon"></i>
-                <input class="textLogin" type="password" name="password" id="password" placeholder="Password">
-            </label>
-            <input type="checkbox" id="checkbox" onchange='checkbox(event)'>Remember me
-            <button type="button" onclick="login()" class="button">Login</button><br>
-            <p onclick="signup()">Forgot password</p>
-        </div>
-        <div class="right-box">
-            <h1 class="mainText"> SignUp </h1>
-            <div class="input-container">
-                <i class="fa fa-user icon"></i>
-                <input type="text" name="fname" id="fname" placeholder="FirstName" class="textLogin">
+    <div id="Div1">
+        <div class="main-div">
+            <div class="login-container">
+                <picture class="image-container">
+                    <img src="avatar (1).png" alt="Beatles">
+                </picture>
+                <label class="input-container">
+                    <i class="fa fa-user icon"></i>
+                    <input class="textLogin" type="text" name="username" id="username" placeholder="UserName">
+                </label>
+                <label class="input-container">
+                    <i class="fa fa-key icon"></i>
+                    <input class="textLogin" type="password" name="password" id="password" placeholder="Password">
+                </label>
+                <input type="checkbox" id="checkbox" onchange='checkBox(event)'>Register
+                <button type="button" onclick="login()" class="button">Login</button><br>
+                <!-- <p onclick="signup()">Forgot password</p> -->
             </div>
-            <div class="input-container">
-                <i class="fa fa-envelope icon"></i>
-                <input type="email" name="email" id="eml" placeholder="Email" class="textLogin"><br>
+            <div class="right-box">
+                <h1 class="mainText"> SignUp </h1>
+                <label class="input-container">
+                    <i class="fa fa-user icon"></i>
+                    <input type="text" name="fname" id="fname" placeholder="FirstName" class="textLogin">
+                </label>
+                <label class="input-container">
+                    <i class="fa fa-envelope icon"></i>
+                    <input type="ema" name="email" id="ema" placeholder="Email" class="textLogin"><br>
+                </label>
+                <label class="input-container">
+                    <i class="fa fa-key icon"></i>
+                    <input type="password" name="password" id="psw" placeholder="password"
+                        pattern="(?=.*\d)(?=.*[a-z])(?=.*[A-Z]).{8,}"
+                        title="Must contain at least one number and one uppercase and lowercase letter, and at least 8 or more characters"
+                        required class="textLogin">
+                </label>
+                <label class="input-container">
+                    <i class="fa fa-lock icon"></i>
+                    <input type="password" name="password" id="confpassword" placeholder="confirmpassword"
+                        class="textLogin"><br>
+                </label>
+                <!-- <input type="checkbox" id="checkbox" onchange='checkBox(event)'>Sendme newsletter -->
+                <button type="button" onclick="sign()" class="button">Signup</button>
             </div>
-            <div class="input-container">
-                <i class="fa fa-key icon"></i>
-                <input type="password" name="password" id="psw" placeholder="password"
-                    pattern="(?=.*\d)(?=.*[a-z])(?=.*[A-Z]).{8,}"
-                    title="Must contain at least one number and one uppercase and lowercase letter, and at least 8 or more characters"
-                    required class="textLogin">
-            </div>
-            <div class="input-container">
-                <i class="fa fa-key icon"></i>
-                <input type="password" name="password" id="confpassword" placeholder="confirmpassword"
-                    class="textLogin"><br>
-            </div>
-            <input type="checkbox" id="checkbox" onchange='checkbox(event)'>Sendme newsletter
-            <button type="button" onclick="sign()" class="button">Signup</button>
         </div>
     </div>
+    <div id="Div2">
+
+    </div>
+    <!-- <input id="Button1" type="button" value="Click" onclick="switchVisible();" /> -->
     <script src="App.js"></script>
 </body>
 
