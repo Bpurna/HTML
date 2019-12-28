@@ -76,7 +76,14 @@ p{
   border-left: 1px solid lightgray;
 }
 #Div2 {
-  display: none;
+  display: none; 
+  position: absolute;
+  background-color: #eee;
+  top: 30px;
+  height: 200px;
+  width: 292px;
+  margin-left: 563px;
+  padding: 10px;
 }
 
 

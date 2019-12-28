@@ -1,6 +1,5 @@
 var array = [];
 var check;
-var Email;
 /**
   Login functionality
  */
@@ -77,7 +76,20 @@ function login() {
                 /**
                  for valid details  we empty  email-value and password,then screen will be hidden .
                  */
-                document.getElementById("Div1").style.display = "none";
+                // document.getElementById("Div2").style.display = "none";
+                document.getElementById("Div2").innerHTML = email.value+" password is:"+pws.value;
+                if (document.getElementById('Div1')) {
+
+                    if (document.getElementById('Div1').style.display == 'none') {
+                        document.getElementById('Div1').style.display = 'block';
+                        document.getElementById('Div2').style.display = 'none';
+                    }
+                    else {
+                        document.getElementById('Div1').style.display = 'none';
+                        document.getElementById('Div2').style.display = 'block';
+                    }
+                }
+              
                 email.value = '';
                 pws.value = '';
                 check = '';
