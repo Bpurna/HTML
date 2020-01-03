@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<!-- Code by using HTML -->
+<!-- <html>
+
+<head>
+    <title>
+        DEMO REACT
+    </title>
+    <style>
+        .person {
+            margin: 0;
+            border: 1px solid #eee;
+            box-shadow: 0 2px 2px #ccc;
+            padding: 20px;
+            width: 200px;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="person">
+        <h1>Manu</h1>
+        <p>Age is:32</p>
+    </div>
+    <div class="person">
+        <h1>Poornima</h1>
+        <p>Age is:26</p>
+    </div>
+</body>
+<script>
+
+</script>
+
+</html> -->
+
+<!-- Code by using React js -->
+<html>
+
+<head>
+    <title>
+        DEMO REACT
+    </title>
+    <style>
+        .person {
+            margin: 0;
+            border: 1px solid #eee;
+            box-shadow: 0 2px 2px #ccc;
+            padding: 20px;
+            width: 200px;
+        }
+    </style>
+</head>
+
+<body>
+<div id="app"></div>
+
+</body>
+<script>
+    function Person(props) {
+        return (
+            <div className="person">
+                <h1>{props.name}</h1>
+                <p>{props.age}</p>
+            </div>
+        );
+    }
+    var app=(
+        <div><Person name="manu" age="21" />
+            <Person name="poornima" age="21" />
+        </div>
+    );
+    ReactDOM.render(app,document.querySelector('app'));
+</script>
+
+</html>
