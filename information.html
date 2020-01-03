@@ -100,8 +100,8 @@
             'Message: ' + msg.value;
 
         // Convert the text to BLOB.
-        const textToBLOB = new Blob([data], { type: 'RNHTMLtoPDF' });
-        const sFileName =  RNHTMLtoPDF.convert(Option);;	   // The file to save the data.
+        const textToBLOB = new Blob([data], { type: 'text/plain' });
+        const sFileName =  'textToBLOB.txt';	   // The file to save the data.
 
         let newLink = document.createElement("a");
         newLink.download = sFileName;
