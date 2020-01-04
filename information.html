@@ -69,6 +69,7 @@
                     style="display: none;"></p>
             <p><label for="file" style="cursor: pointer;">Upload Image</label></p>
             <p><img id="output" width="200" /></p>
+
         </div>
         <div>
             <input type="button" id="bt" value="Save data to file" onclick="saveFile()" />
@@ -77,31 +78,31 @@
     </div>
 </body>
 <script>
-   
     var loadFile = function (event) {
         var image = document.getElementById('output');
         image.src = URL.createObjectURL(event.target.files[0]);
     };
     let saveFile = () => {
-
         // Get the data from each element on the form.
         const name = document.getElementById('txtName');
         const age = document.getElementById('txtAge');
         const email = document.getElementById('txtEmail');
         const country = document.getElementById('selCountry');
         const msg = document.getElementById('msg');
-
-        // This variable stores all the data.
+        const img = document.getElementById('output');
+   
+        
         let data =
             '\r Name: ' + name.value + ' \r\n ' +
             'Age: ' + age.value + ' \r\n ' +
             'Email: ' + email.value + ' \r\n ' +
             'Country: ' + country.value + ' \r\n ' +
-            'Message: ' + msg.value;
+            'Message: ' + msg.value + '\r\n' +
+            'Image: ' + img.src;
 
         // Convert the text to BLOB.
-        const textToBLOB = new Blob([data], { type: 'text/plain' });
-        const sFileName =  'textToBLOB.txt';	   // The file to save the data.
+        const textToBLOB = new Blob([data], { type: 'image/png' });
+        const sFileName = 'textToBLOB.dox';	   // The file to save the data.
 
         let newLink = document.createElement("a");
         newLink.download = sFileName;
@@ -114,7 +115,6 @@
             newLink.style.display = "none";
             document.body.appendChild(newLink);
         }
-
         newLink.click();
     }
 </script>
